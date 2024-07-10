@@ -1,0 +1,114 @@
+/* Universal style */
+html {
+    font-family: 'Helvetica', 'Arial';
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+
+}
+/* Html structure style */
+header{
+    display: flex;
+    position: sticky;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    width: auto;
+    padding: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+main {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li {
+    display: inline-flex;
+    text-decoration: underline;
+    margin: 0 10px;
+    color: white;
+    justify-content: space-around;
+    align-items: baseline;
+    
+}
+footer {
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    margin-left: 20px;
+}
+/* text content */
+h2,
+h3,
+h5 {
+    font-weight: bold;
+    color: white;
+}
+h4 {
+    font-weight: bold;
+}
+p {
+    font-family: "Helvetica", sans-serif;
+    display: inherit;
+}
+/* classes */
+.box {
+    width: inherit;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+     /* border: 1px solid black; */
+}
+.container {
+    background-image: url("../images/img-mission-background.webp");
+    height: 700px;
+    width: 1200px;
+    align-content: center;
+}
+.logo {
+    height: 50px;
+}
+.featuredtea {
+    width: 1000px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.tea {
+    flex-basis: 300px;
+    height: 200px;
+    justify-items: center;
+}
+.location-container {
+    background-image: url(../images/img-locations-background.webp);
+    height: 500px;
+    width: 1200px;
+    flex-direction: row;
+    align-content: center;
+}
+.location-box {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.address-box {
+    background-color: black;
+    width: 300px;
+    opacity: 1;
+    flex-direction: column;
+    
+}
+.contact-info {
+    height: 200px;
+}
