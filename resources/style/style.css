@@ -11,7 +11,8 @@ html {
 /* Html structure style */
 header{
     display: flex;
-    position: fixed;
+    position: sticky;
+    background-color: black;
     border-bottom: 1px solid seashell;
     height: 69px;
     width: auto;
@@ -62,6 +63,9 @@ p {
     font-family: "Helvetica", sans-serif;
     display: inherit;
 }
+body {
+    margin: 0 auto;
+}
 /* classes */
 .box {
     width: inherit;
@@ -79,17 +83,17 @@ p {
     height: 50px;
 }
 .featuredtea {
-    width: 1000px;
+    max-width: 1000px;
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
-.tea {
-    flex-basis: 300px;
+.tea img {
+    width: 300px;
     height: 200px;
-    justify-items: center;
+    padding: 10px 10px;
 }
 .location-container {
     background-image: url(../images/img-locations-background.webp);
