@@ -62,7 +62,8 @@ h5 {
 p {
     font-family: "Helvetica", sans-serif;
     display: inherit;
-    margin-bottom: 50px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 body {
     margin: 0 auto;
@@ -100,41 +101,37 @@ body {
     display: flex;
     background-image: url(../images/img-locations-background.webp);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     height: 500px;
-    width: 1200px;
+    width: 1050px;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
 }
 .location-box {
     display: inline-flex;
     padding-top: 15px;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: flex-end;
 }
 .address-box {
+    padding: 10px;
     background-color: black;
-    margin-right: 40px;
     height: auto;
     width: 300px;
-    opacity: 1;
-    flex-direction: column;
+    opacity: 0.9;
     
 }
-.location-heading {
-    margin-top: 88px;
-}
+
 #location {
     padding-top: 100px;
 }
-#location h2{
-    padding: 0;
-    font-weight: 600;
-    font-size: 2rem;
+#location h2 {
+    margin-top: 2rem;
+    font-weight: 800;
 }
-#location h3{
-    padding: 20px 0;
+#location h3 {
+    padding: 0.5rem 0;
 }
 .contact-info {
     height: 200px;
